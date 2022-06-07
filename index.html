@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Harry37x2/interactive-rating-component.git
+git push -u origin main
+
+  -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <!-- Rating state start -->
+    <div class="rating-state">
+      <button class="icon"><img src="./images/icon-star.svg" alt="star icon" /></button>
+      <h1>How did we do?</h1>
+
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+
+      <div class="stars">
+        <a>1</a>
+        <a>2</a>
+        <a>3</a>
+        <a>4</a>
+        <a>5</a>
+      </div>
+      <input id="submit-button" type="submit" value="SUBMIT" />
+    </div>
+    <!-- Rating state end -->
+
+
+    <!-- Thank you state start -->
+    <div class="result hidden">
+      <img class="score-img" src="./images/illustration-thank-you.svg" alt="thank you picture" />
+      <div class="score">
+        You selected <span id="rating"></span> out of 5
+      </div>
+      <h1>Thank You!</h1>
+      <p class="thank-you-text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+    <!-- Thank you state end -->
+  </main>
+  <script src="./script.js"></script>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    background-color: hsl(216, 12%, 8%);
+    display: block;
+
+}
+
+main {
+    background-color: hsl(213, 19%, 18%);
+    height: 350px;
+    width: 350px;
+    margin: 4em auto;
+    border-radius: 2em;
+    padding: 30px;
+}
+
+.icon {
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 30%);
+    border: none;
+    margin: .25em;
+    height: 48px;
+    width: 48px;
+    transition: transform 1s;
+}
+
+.icon:hover {
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.stars a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 30%);
+    height: 48px;
+    width: 48px;
+
+}
+
+.stars:hover a {
+    opacity: 100%;
+    transition: opacity 1s;
+}
+
+.stars a:hover~a {
+    opacity: 50%;
+}
+
+.stars a.active {
+    opacity: 100%;
+    background-color: hsl(25, 97%, 53%);
+    transition: opacity, background-color .5s;
+}
+
+input[type=submit] {
+    width: 350px;
+    margin-top: 30px;
+    padding: 16px;
+    border-radius: 2em;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+input[type=submit]:active {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-img {
+    margin-top: 10px;
+}
+
+.score {
+    border-radius: 2em;
+    background-color: hsl(213, 19%, 30%);
+    color: hsl(25, 97%, 53%);
+    padding: 5px 20px 5px 20px;
+    margin: 20px auto;
+}
+
+.thank-you-text {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
